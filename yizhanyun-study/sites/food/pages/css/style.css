@@ -1,0 +1,463 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  background-color: #fff;
+  color: black;
+  font-family: 'Lato',arial,sans-serif;
+  font-weight: 300px;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+.row{
+  margin: 0 auto;
+  max-width: 1140px;
+}
+section{
+  padding: 80px 0;
+}
+.clearfix:after{
+  content: ".";
+  clear:both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/* ---------------------------- */
+/* 可复用组件 */
+/* ---------------------------- */
+h1{
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 240%;
+  word-spacing: 4px;
+}
+h2{
+  font-weight: 300;
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h3{
+  font-weight: 300;
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+h2:after{
+  display: block;
+  height:2px;
+  background-color: orange;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;;
+  margin-top: 30px;
+}
+/* 文字段落 */
+.long-copy{
+  font-weight: 300;
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+.box p{
+  font-weight: 300;
+  font-size:90%;
+  line-height:145%;
+}
+/* 图标 */
+
+.icon-big{
+  font-size: 350%;
+  color: orange;
+  display: block;
+  margin-bottom: 10px;
+}
+.icon-small{
+  font-size: 120%;
+  color: orange;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+
+}
+
+/* 按钮 */
+.btn:link,
+.btn:visited,
+input[type=submit]{
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+  color: #fff;
+  background-color: orange;
+  border: 1px solid orange;
+  margin-right: 15px;
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+  color:orange;
+  border: 1px solid orange;
+  column-rule-color: orange;
+}
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+  background-color: rgb(255, 153, 0);
+}
+.btn-full:hover,
+.btn-full:active{
+  background-color: rgb(255, 153, 0);
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+  border: 1px solid rgb(255, 153, 0);
+  color: #fff;
+}
+/* ---------------------------- */
+/* header */
+/* ---------------------------- */
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../image/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.hero-text-box{
+  position:absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.logo{
+  height: 50px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+/* 导航栏 */
+.main-nav{
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+  display: block;
+}
+.main-nav li{
+  display: inline-block;
+  margin-left: 40px;
+}
+.main-nav  a:link,
+.main-nav  a:visited{
+  color: #fff;
+  text-decoration: none;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+}
+.main-nav a:hover,
+.main-nav a:active{
+  border-bottom: 2px solid orange;
+}
+
+/* 手机导航 */
+.mobile-nav-icon{
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+.mobile-nav-icon i{
+  font-size: 200%;
+  color: #fff;
+}
+
+
+/* 粘性导航 */
+.sticky{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  box-shadow:0 2px 2px whitesmoke;
+  z-index: 99;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+  padding: 3px 0;
+  color: black;
+}
+/* ---------------------------- */
+/* section-meals */
+/* ---------------------------- */
+.section-meals{
+  padding: 0;
+}
+.meals-showcase{
+  list-style: none;
+  width: 100%;
+}
+.meals-showcase li{
+  display: block;
+  float: left;
+  width: 25%;
+}
+.meal-photo{
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+.meal-photo img{
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s,opacity 0.5s;
+}
+.meal-photo img:hover{
+  transform: scale(1.05);
+  opacity: 1;
+}
+/* ---------------------------- */
+/* section-steps */
+/* ---------------------------- */
+.section-steps{
+  background-color: #f4f4f4;
+}
+.steps-box{
+  margin-top: 30px;
+}
+.steps-box:first-child{
+  text-align: right;
+  padding-right: 3%;
+}
+.steps-box:last-child{
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 70px;
+}
+.app-screen{
+  width: 40%;
+}
+.work-step{
+  margin-bottom: 50px;
+}
+.work-step:last-of-type{
+  margin-bottom: 80px;
+}
+.work-step div{
+  color: orange;
+  font-size: 150%;
+  width: 54px;
+  height: 54px;
+  border: 2px solid orange;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 25px;
+  padding:5px;
+  float: left;
+}
+.btn-app:link,
+.btn-app:visited{
+  border: 0;
+}
+.btn-app img{
+  height: 50px;
+  width: 150px;
+  margin-right: 10px;
+}
+/* ---------------------------- */
+/* section-cities */
+/* ---------------------------- */
+.box img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.city-feature{
+  margin-bottom: 5px;
+}
+/* ---------------------------- */
+/* section-testimonials */
+/* ---------------------------- */
+.section-testimonials{
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../image/back-customers.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+blockquote{
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+blockquote:before{
+  content: "“";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+cite{
+  font-size: 90%;
+  font-style: normal;
+  display: block;
+  margin-top: 25px;
+}
+cite img{
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+/* ---------------------------- */
+/* section-plans */
+/* ---------------------------- */
+.section-plans{
+  background-color: #f4f4f4;
+}
+.plan-box{
+  width: 300px;
+  background-color: #fff;
+}
+.plan-box div{
+  padding: 15px;
+  border: 1px solid #f4f4f4;
+}
+.plan-box div:first-child{
+  background-color: #fcfcfc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.plan-box div:last-child{
+  text-align: center;
+  border:0;
+}
+.plan-price{
+  font-size: 240%;
+  font-weight: 100;
+  color: orange;
+  margin-bottom: 20px;
+}
+.plan-price span{
+  font-size: 40%;
+  font-weight: 300;
+}
+.plan-price-meal{
+  font-size: 80%
+}
+.plan-box ul{
+  list-style: none;
+}
+.plan-box ul li{
+  padding: 5px 0;
+}
+#ture{
+  display: inline-block;
+  color: orange;
+  margin-right: 15px;
+}
+
+/* ---------------------------- */
+/* section-form */
+/* ---------------------------- */
+.section-form{
+  width: 40%;
+  margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+  width: 100%;
+  height: 30px;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid grey;
+}
+textarea{
+  height: 100px;
+}
+/* ---------------------------- */
+/* footer */
+/* ---------------------------- */
+footer{
+  background-color: black;
+  padding: 50px;
+  font-size: 80%;
+}
+.footer-nav{
+  list-style: none;
+  float: left;
+}
+.social-links{
+  list-style: none;
+  float: right;
+}
+.footer-nav li,
+.social-links li{
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child{
+  margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.2s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active{
+  color: #ddd;
+}
+footer p{
+  color: #888;
+  font-size: 80%;
+  text-align: center;
+  margin-top: 30px;
+}
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+  opacity: 0;
+  animation-duration: 1s;
+}
+.js--wp-4{
+  animation-duration: 1 s;
+}
+
+.js--wp-1.animate__animated,
+.js--wp-2.animate__animated,
+.js--wp-3.animate__animated{
+  opacity: 1;
+}
+

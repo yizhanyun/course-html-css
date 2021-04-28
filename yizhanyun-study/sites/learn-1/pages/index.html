@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>一站云课堂</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Place favicon.ico in the root directory -->
+  </head>
+
+  <body>
+    
+    <div class="container">
+      <div class="post">
+        <h1>一站云课堂</h1>
+        <p class="date">2021.01.01</p>
+        <p class="main-text">
+          <strong>“游侠”</strong>（yx)是 <em>一站云自主开发</em>的开源<u>Web服务器</u>，用于一站云模板库开发，也是在线展示的生产服务器。<br>
+          “游侠”支持同时进行多站点开发，也是进行Web开发学习和实验的理想工具。使用“游侠”，需要首先安装JavaScript服务器端运行环境Node.js和JavaScript依赖包管理器yarn。
+        </p>
+        <h2>安装JavaScript服务器运行环境Node.js</h2>
+        <p class="main-text">
+          Node.js是一个强大的异步、事件驱动的JavaScript运行环境，可以用来构建大规模网络应用。
+          我们自主研发的Web服务器“游侠”(yx)，运行在Node.js之上。
+          yx使用了最新的JS技术，要求使用V15以上版本的Node.js。<br>
+          访问Node.js官网https://nodejs.org/en/下载安装。当前最新版本链接为:
+          <ul>
+            <li>Windows版本下载链接：https://nodejs.org/dist/v15.12.0/node-v15.12.0-x64.msi</li>
+            <li> macOS版本下载链接：https://nodejs.org/dist/v15.12.0/node-v15.12.0.pkg</li>
+            <li>Linux版本下载链接：https://nodejs.org/dist/v15.12.0/node-v15.12.0-linux-x64.tar.xz</li>
+          </ul>
+          Windows和macOS版本，下载后，按照操作系统安装程序安装即可。<br>
+          Linux版本解压后，需要将node的运行程序，添加到PATH中，具体方法如下:
+          <ul>
+            <li>解压tar.xz文件，运行有 tar node-v15.12.0-linux-x64,将将会解压到 node-v15.12.0-linux-x64目录下</li>
+            <li>使用mv命令，将该目录移到您放置开发工具的目录下，比如mv ./ode-v15.12.0-linux-x64 ~/myapp/node15.12.0</li>
+            <li>使用编辑器打开您用户目录下的.bashrc或者.profile</li>
+            <li>找到PATH="<abc>"的行</li>
+            <li>将该行修改为PATH="<abc>:$HOME/myapp/node15.12.0"</li>
+            <li>如果没有找到PATH=...的行，您可以在文件末尾添加如下： PATH="$PATH:HOME/myapp/node15.12.0</li>
+            <li>保存修改，运行source ~/.bashrc 或source ~/.profile</li>
+          </ul>
+        </p>
+        <h2>安装Node.js软件包管理程序yarn</h2>
+        <p class="main-text">
+          yarn是一个JavaScript依赖包管理器和项目管理工具，用作专业前端或Nodejs后端项目的软件包安装和管理
+          我们的开发工具“游侠”使用yarn作为项目管理工具和依赖包安装工具。<br>
+          yarn目前有两个版本，2.x为新版本，还没有被业界广泛接受，我们使用经典版。<br>
+          <ul>
+            <li>安装Nodejs后，可以直接用伴随Nodejs安装的npm，使用如下命令npm install --global yarn安装</li>
+            <li>安装完node.js和yarn以后，您就可以使用我们的开发服务器“游侠”，创建HTML项目，学习Web技术了</li>
+            <li>打开命令行，首先创建学习目录，例如yizhanyun-study</li>
+            <li>进入该目录，运行yarn init，初始化您的学习项目。您可以接受所有默认设置，等您经验更加丰富后，可以修改设置。</li>
+            <li>完成后运行yarn add yx，这将会安装“游侠”开发服务器。</li>
+            <li>此后开发测试等主要通过yarn yx <命令>完成。</li>
+            <li>运行yarn yx ls，可以列出duosite自带的项目模板列表。</li>
+            <li>运行yarn yx new template-blank test-1,这时将会创建一个空的HTML页面开发项目，目录为yizhanyun-study/sites/test-1。</li>
+            <li>运行yarn yx dev，打开浏览器，建议使用Chrome或微软Edge浏览器，访问test-1.localhost:5000，就可以访问您编辑的HTML页面了。</li>
+            <li>打开VS Code或者其他您熟悉的编辑器，编辑test-1/pages目录下的index.html,保存修改,浏览器页面会随之刷新，看到修改效果。</li> 
+          </ul>
+        </p>
+        <img src="./img/二维码01.jpg" alt="二维码">
+      </div>
+      <div class="other">
+        <a href="#">"游侠"详细介绍</a>
+        <a href="https://github.com/yizhanyun/yx">"游侠"Github地址</a>
+        <a href="#">我的其他文章</a>
+      </div>
+      <div class="clearfix"></div>
+      <div class="author">
+        <img src="./img/download.png" alt="author">
+      </div>
+    </div>
+
+  </body>
+  <script>
+    document.write(
+      '<script src="http://' +
+        (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js"></' +
+        'script>'
+    )
+  </script>
+</html>

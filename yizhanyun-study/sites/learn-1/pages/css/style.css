@@ -1,0 +1,48 @@
+h1,h2{
+  color: royalblue;
+}
+.clearfix:after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+.main-text{
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.container{
+  max-width: 1140px;
+  margin: 20px auto 0 auto;
+}
+.post{
+  width: 75%;
+  float: left;
+  position: relative;
+}
+.post img{
+  width: 150px;
+  margin-left: 30px;
+}
+.other{
+  width: 25%;
+  float: left;
+}
+.other a{
+  display: block;
+  margin: 20px 0;
+}
+.author{
+  display: block;
+  border-top: 1px solid grey;
+}
+.author img{
+  margin: 20px 30px;
+}
+.date{
+position: absolute;
+top: 5px;
+right: 20px;
+}
+
+

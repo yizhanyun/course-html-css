@@ -1,0 +1,24 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1616747126519'); /* IE9 */
+  src: url('iconfont.eot?t=1616747126519#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAK8AAsAAAAABsQAAAJtAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBIIEUATYCJAMMCwgABCAFhG0HQhvmBciemjxZRlthoAAZwgUH4SmC+v3Y3nuHapIkmiz7dJJoJNHonkgQm0dCpGsm//v2a3OohjLvUc884V6/zu7tfd8d7HVCuZCIYqESCiFCaJjsaEFAeZJ8Ns4STTi+6bJM32oU9vm/d/wX0AdpXctyXAvHnMefFWDc8U5gYw+yAsSGsQtcwnYCnSbk5ba3Dy9hQrL6BeJcSQcmcgEpWbpdaK2ZmuKR1V7uywfwEP4+/lRjgqKlsnbaOdvyYfXr13tFA70KzGcDm0XFIpDEaW1i37Bg/LBO/Uh7fqsUylzhpiGhXDe27vSPV4hWVmk3mIXJwterKyX4et9BARW0IvtXLs2QRRVplYy1LVuCb7+Qb/I0+uJVDxL5z7izSHqZX/IqfHsCreDgarBCVVSrA6jliF4hlLIAgQbdj1RvGASXn7w1X/8nuhJ83u0Rqvu5SPsJnMEPa5TUNCS5CTKkqtdaGqjGTt63oFMnGpZn0N941whIbaGdKyCKNuOo2k1SyS2iRZcVtGq3hk4LdmZ3GaINi+zAvEeA0O8LRa8nVP1+qOR+0WLUP1r1xzA67YZbsst0qKmmyWHy0X1A5SWxcMw8FZWfk7wJHZ1VhYJr0kaFsVIsF9M7FJOeY4S5lVVmgUInEW6D3SgME0x10iePiz3mtFsqiboPFb0kgilbNOJgxIdcD5DiScSEX5tNlb5/jkg3Qg7dQtRkrxHNUM2jiqJyD2pHH/ci7uUW45ZUxZiABC0RQdugEwmFEiit79RHPKyoNyKW6irZ1URffXF9Y/R966CTdX6NEjVS1/JS7Yjim1AZnuLVpqcTY8otAAAAAA==') format('woff2'),
+  url('iconfont.woff?t=1616747126519') format('woff'),
+  url('iconfont.ttf?t=1616747126519') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1616747126519#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-323Menulist:before {
+  content: "\e7c2";
+}
+
+.icon-256cross07:before {
+  content: "\e7c4";
+}
+
